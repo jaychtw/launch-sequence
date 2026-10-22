@@ -1,0 +1,33 @@
+
+> launch-sequence@1.0.0 test
+> node --test tests/engine.test.js
+
+✔ campaign spans and display durations match the design (3.058585ms)
+✔ commander codes normalize ASCII and reject invalid input (0.381496ms)
+✔ generator preserves leading zeroes and requested length (0.499311ms)
+✔ generator does not immediately reuse the previous code (0.16163ms)
+✔ viewing code cannot be submitted before concealment (0.217853ms)
+✔ first unassisted correct submission earns independent clear (0.160999ms)
+✔ invalid lengths and non-digits do not consume attempts (0.238344ms)
+✔ wrong answer never launches; same-code retry cannot earn independent best (0.229631ms)
+✔ assisted practice can advance campaign without inflating independent best (0.261789ms)
+✔ fresh code after practice may earn independent best (0.27589ms)
+✔ free practice updates best without advancing campaign (0.211244ms)
+✔ mission history retains previous errors and help when a fresh code earns independent best (0.142332ms)
+✔ seven successful missions produce seven completion records (0.242431ms)
+✔ malformed and unsupported storage recover safely (0.499633ms)
+✔ storage preserves preferences and results but never stores active secret code (0.165826ms)
+✔ viewing clock pauses in background, resumes, and clamps at zero (0.157103ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 82.7745
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

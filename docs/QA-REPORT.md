@@ -10,6 +10,8 @@ Validated on 2026-10-22 with Node.js 24.19.0, npm 11.9.0, and Linux Chromium 154
 | `npm test` | 16 passed; 0 failed, skipped, or disabled |
 | `npm run test:browser` | 14 passed; 0 failed, skipped, or disabled |
 | `npm run build` | Passed; relative assets suitable for a Pages project path |
+| Frozen `npm ci` installation and rebuilt output | Passed |
+| All 14 browser tests against the production preview | Passed; log in `docs/qa/production-browser.txt` |
 | Browser console errors during full seven-mission campaign | None |
 | Screenshots | 19 captured under `docs/screenshots/` |
 
@@ -31,4 +33,8 @@ Reviewed original SVG artwork, English desktop home, Traditional Chinese phone h
 
 ## Deployment
 
-The repository includes a GitHub Actions workflow that tests, builds, and deploys `main` to GitHub Pages. Public deployment and live-browser verification are recorded separately when completed; local build success alone is not deployment evidence.
+Source was pushed to `main` in `jaychtw/launch-sequence`. GitHub Actions run [39766365831](https://github.com/jaychtw/launch-sequence/actions/runs/39766365831) passed dependency installation, all unit and browser tests, the production build, and artifact uploads. Its deploy job failed while Pages was not enabled.
+
+The connected integration cannot enable Pages: the create-site API returned `403 Resource not accessible by integration`. Repository ownership and push access do not grant this integration Pages administration permission. No public deployment or live-site browser verification is claimed.
+
+To unblock publication, the repository owner must select **GitHub Actions** as the build source in [Settings → Pages](https://github.com/jaychtw/launch-sequence/settings/pages), then rerun the failed deployment or dispatch the included workflow. Future pushes to `main` automatically test, build, and deploy. Local production verification and CI success remain distinct from public deployment.
