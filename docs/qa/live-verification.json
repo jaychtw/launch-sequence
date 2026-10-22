@@ -1,0 +1,60 @@
+{
+  "url": "https://jaychtw.github.io/launch-sequence/",
+  "verifiedAt": "2026-10-22T11:23:05.271Z",
+  "browser": "154.0.8037.57",
+  "assetChecks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "49ca1900777d68fa3306460d8afa9a07fed303f200c937697dc6c0759c92c5fa",
+      "matchesLocalBuild": true
+    },
+    {
+      "path": "assets/index-hv7wq1Ee.css",
+      "status": 200,
+      "sha256": "2ec4e2e66a93e7096b351272859dd2a3ba52704fb97d892a5855f59eb5d03c47",
+      "matchesLocalBuild": true
+    },
+    {
+      "path": "assets/index-Cxm9PejX.js",
+      "status": 200,
+      "sha256": "c96b4e9a28aa4951c0dfd57063af360e99f0048d0d051377aa4e30721a426f33",
+      "matchesLocalBuild": true
+    }
+  ],
+  "playthroughs": [
+    {
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "missionsCompleted": 7,
+      "certificate": true,
+      "restoredAfterReload": true,
+      "freePracticeDigits": 12,
+      "independentBest": 12,
+      "wrongAnswerAndRetry": true,
+      "horizontalOverflow": false,
+      "runtimeErrors": [],
+      "failedRequests": []
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "missionsCompleted": 7,
+      "certificate": true,
+      "restoredAfterReload": true,
+      "freePracticeDigits": 12,
+      "independentBest": 12,
+      "wrongAnswerAndRetry": false,
+      "horizontalOverflow": false,
+      "runtimeErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "status": "passed"
+}
